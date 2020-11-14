@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Secret Diary</title> 
+    <link rel="stylesheet" type="text/css" href="css_in.css">
+    <script>
+    function checkforblank(){
+        
+        if (document.getElementById('mail_id' && 'password').value == ""){
+            alert('Blank Blocks');
+            return false;
+        }
+    }
+    </script>
+<body>
+    
+
+    
+    <section id="header">
+    <div class="container text-center">
+    <div class="login-box">
+        
+    <h1 style="text-align: center">Secret Diary</h1>
+    <p>Store your thoughts permanently and securely.</p>
+    <h6 style="text-align: center">Intrested? Sign up now.</h6>    
+        
+        <form action="connects.php" method="POST">
+       
+        <div class="textbox">
+        <input type="text" size="47" placeholder="Your Email" name="mail_id" id="mail_id"  required>
+        </div>
+        
+        <div class="textbox">
+        <input type="password" size="47" placeholder="Password" name="password" id="password" required>
+        </div>    
+        
+        <div class="checkbox">
+        <input name="Stay logged in" id="Stay logged in" type="checkbox" value="1">
+        <label for="Stay logged in">Stay logged in</label>
+        </div>
+        
+            <a href="next.html" Sign Up ><button type="button" onclick="return checkforblank()" class="btn btn-primary">Sign Up</button> </a>
+       <!-- <input class="btn"  type="submit"  value="Sign Up"> -->
+        <br>
+        <br>
+            
+        <div class="next-page">
+        <a href="log_in.html">Log in</a>
+        </div>
+    
+        </form>
+        
+    </div>  
+        
+        
+        </div>
+       
+</section>
+    
+</body>   
+</head>
+</html>
