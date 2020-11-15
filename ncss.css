@@ -10,7 +10,7 @@ body{
     /*background: url(htmlcss/background.jpg);*/
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:scroll;
 }
 #container{
     position: absolute;
@@ -31,5 +31,6 @@ margin-left: 120px;
 }
 .login-box{
     margin-left: 55px;
+    position: fixed;
     
 }
